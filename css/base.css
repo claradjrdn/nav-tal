@@ -1,0 +1,140 @@
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100vh; }
+
+#liste {
+  height: 100%;
+  width: 100%; }
+
+.filtres, .hide {
+  display: block;
+  position: absolute;
+  background-color: red;
+  border: solid black 3px;
+  width: 20%;
+  height: 20%; }
+
+.detail {
+  position: absolute; }
+
+.filtres p {
+  font-size: 2em; }
+
+#affiche-instal, #video1, #vjing1, #design2 {
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
+  top: 10%;
+  left: 10%; }
+
+#affiche-video, .instal#instal1, #vjing2, #design1 {
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
+  top: 20%;
+  left: 20%; }
+
+#affiche-design, #instal2, #video2 {
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
+  top: 35%;
+  left: 25%; }
+
+#affiche-vjing {
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
+  top: 32%;
+  left: 15%; }
+
+#affiche-instal:hover, #affiche-video:hover, #affiche-design:hover, #affiche-vjing:hover {
+  z-index: 2; }
+
+.detail {
+  display: block;
+  width: 20%;
+  height: 20%;
+  opacity: 0;
+  /*z-index: -1;*/ }
+
+.show {
+  display: block; }
+
+.hide#affiche-vjing,
+.hide#affiche-design,
+.hide#affiche-instal,
+.hide#affiche-video {
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
+  position: absolute;
+  top: 100%;
+  /*display: none;*/ }
+
+/*#liste>div {
+	display: none;
+}*/
+#liste.affiche-tous {
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
+  position: absolute;
+  top: -40%;
+  left: 0%;
+  z-index: -1; }
+
+#liste.affiche-instal,
+#liste.affiche-video,
+#liste.affiche-vjing,
+#liste.affiche-design {
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
+  position: absolute;
+  top: 0%;
+  left: 0%; }
+
+/* =============== CA ================*/
+#liste.affiche-instal > .instal,
+#liste.affiche-video > .video,
+#liste.affiche-vjing > .vjing,
+#liste.affiche-design > .design {
+  -webkit-transition: position1s ease-out;
+  transition: position 1s ease-out;
+  display: block;
+  width: 20%;
+  height: 20%;
+  background-color: green;
+  opacity: 1; }
+
+/* ================ OU CA ===================*/
+/*
+#liste .instal, 
+#liste .video,
+#liste .vjing, 
+#liste .design {
+	-webkit-transition: 1s ease-out ;
+	transition: 1s ease-out;
+	display: block;
+	width: 20%;
+	height: 20%;
+	background-color: green;
+}
+
+#liste.affiche-instal>.video,
+#liste.affiche-instal>.vjing,
+#liste.affiche-instal>.design, 
+#liste.affiche-video>.instal,
+#liste.affiche-video>.vjing,
+#liste.affiche-video>.design,
+#liste.affiche-vjing>.instal, 
+#liste.affiche-vjing>.video, 
+#liste.affiche-vjing>.design, 
+#liste.affiche-design>.instal,
+#liste.affiche-design>.video,
+#liste.affiche-design>.vjing {
+	display: none;
+}
+
+*/
+/* 
+
+/* displa block + opacity */
+
+/*# sourceMappingURL=base.css.map */
