@@ -5,12 +5,12 @@ body {
 	height: 100vh;
 }
 
-#liste {
+#list {
 	height: 100%;
 	width: 100%;
 }
 
-.filtres, .hide {
+.filter-list__item, .hide {
 	display: block;
 	position: absolute;
 	background-color: red;
@@ -26,39 +26,39 @@ body {
 #video1, #video2, #vjing1, #vjing2, #design1, #design2 {	
 }
 
-.filtres p {
+.filter-list__item p {
 	font-size: 2em;
 }
 
-#affiche-instal, #video1, #vjing1, #design2 {
+#show-instal, #video1, #vjing1, #design2 {
 	-webkit-transition: 1s ease-out ;
 	transition: 1s ease-out;	
 	top: 10%;
 	left: 10%
 }
 
-#affiche-video, .instal#instal1, #vjing2, #design1 {
+#show-video, .instal#instal1, #vjing2, #design1 {
 	-webkit-transition: 1s ease-out ;
 	transition: 1s ease-out;	
 	top: 20%;
 	left: 20%
 }
 
-#affiche-design, #instal2, #video2 {
+#show-design, #instal2, #video2 {
 	-webkit-transition: 1s ease-out ;
 	transition: 1s ease-out;	
 	top: 35%;
 	left: 25%
 }
 
-#affiche-vjing {
+#show-vjing {
 	-webkit-transition: 1s ease-out ;
 	transition: 1s ease-out;
 	top: 32%;
 	left: 15%
 }
 
-#affiche-instal:hover, #affiche-video:hover, #affiche-design:hover, #affiche-vjing:hover {
+#show-instal:hover, #show-video:hover, #show-design:hover, #show-vjing:hover {
 	z-index: 2;
 } 
 
@@ -74,10 +74,10 @@ body {
 	display: block;
 }
 
-.hide#affiche-vjing,
-.hide#affiche-design,
-.hide#affiche-instal,
-.hide#affiche-video {
+.hide#show-vjing,
+.hide#show-design,
+.hide#show-instal,
+.hide#show-video {
 	-webkit-transition: 1s ease-out ;
 	transition: 1s ease-out;
 	position: absolute;
@@ -85,11 +85,11 @@ body {
 	/*display: none;*/
 }
 
-/*#liste>div {
+/*#list>div {
 	display: none;
 }*/
 
-#liste.affiche-tous {
+#list.show-all {
 	-webkit-transition: 1s ease-out ;
 	transition: 1s ease-out;
 	position: absolute;
@@ -98,10 +98,10 @@ body {
 	z-index: -1;
 }
 
-#liste.affiche-instal, 
-#liste.affiche-video, 
-#liste.affiche-vjing, 
-#liste.affiche-design {
+#list.show-instal, 
+#list.show-video, 
+#list.show-vjing, 
+#list.show-design {
 	-webkit-transition: 1s ease-out ;
 	transition: 1s ease-out;
 	position: absolute;
@@ -111,10 +111,10 @@ body {
 
 /* =============== CA ================*/
 
-#liste.affiche-instal>.instal, 
-#liste.affiche-video>.video,
-#liste.affiche-vjing>.vjing, 
-#liste.affiche-design>.design {
+#list.show-instal>.instal, 
+#list.show-video>.video,
+#list.show-vjing>.vjing, 
+#list.show-design>.design {
 	-webkit-transition: position1s ease-out ;
 	transition: position 1s ease-out;
 	display: block;
@@ -127,10 +127,10 @@ body {
 /* ================ OU CA ===================*/
 
 /*
-#liste .instal, 
-#liste .video,
-#liste .vjing, 
-#liste .design {
+#list .instal, 
+#list .video,
+#list .vjing, 
+#list .design {
 	-webkit-transition: 1s ease-out ;
 	transition: 1s ease-out;
 	display: block;
@@ -139,18 +139,18 @@ body {
 	background-color: green;
 }
 
-#liste.affiche-instal>.video,
-#liste.affiche-instal>.vjing,
-#liste.affiche-instal>.design, 
-#liste.affiche-video>.instal,
-#liste.affiche-video>.vjing,
-#liste.affiche-video>.design,
-#liste.affiche-vjing>.instal, 
-#liste.affiche-vjing>.video, 
-#liste.affiche-vjing>.design, 
-#liste.affiche-design>.instal,
-#liste.affiche-design>.video,
-#liste.affiche-design>.vjing {
+#list.show-instal>.video,
+#list.show-instal>.vjing,
+#list.show-instal>.design, 
+#list.show-video>.instal,
+#list.show-video>.vjing,
+#list.show-video>.design,
+#list.show-vjing>.instal, 
+#list.show-vjing>.video, 
+#list.show-vjing>.design, 
+#list.show-design>.instal,
+#list.show-design>.video,
+#list.show-design>.vjing {
 	display: none;
 }
 

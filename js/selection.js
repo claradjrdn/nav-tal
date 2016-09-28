@@ -1,8 +1,8 @@
 $(document).ready( function() {
 	
-          $(".filtres").click(function(){
+          $(".filter-list__item").click(function(){
             var id=$(this).attr("id");
-            $("#liste").toggleClass(id);
+            $("#list").toggleClass(id);
 /*            $("#liste").removeClass().addClass(id);*/
 	            
 
@@ -13,8 +13,8 @@ $(document).ready( function() {
 	            */
           });
 
-          $(".filtres").click(function(){
-          		$(this).siblings('.filtres').toggleClass("hide");
+          $(".filter-list__item").click(function(){
+          		$(this).siblings('.filter-list__item').toggleClass("hide");
 /*          		$(this).siblings('.filtres').removeClass().addClass("hide");*/
 
           		/* $(this).siblings('.filtres').toggle("slide");*/
