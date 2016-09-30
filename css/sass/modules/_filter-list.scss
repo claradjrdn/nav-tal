@@ -1,0 +1,24 @@
+.filter-list__item {
+	-webkit-transition: 1s ease-out ;
+	transition: 1s ease-out;	
+}
+
+.filter-list__item, 
+.hide {
+	position: absolute;
+	display: block; width: 20%; height: 20%;
+	background-color: $primary-color;
+	border: solid black 3px;
+}
+
+.filter-list__item p {
+	font-size: 2em;
+}
+
+.filter-list__item.hide {
+	position: absolute;	top: 100%;
+}
+
+.filter-list__item:hover {
+	z-index: 2;
+} 
