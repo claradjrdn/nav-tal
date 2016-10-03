@@ -1,0 +1,31 @@
+.project-list {
+	z-index: -1;
+	width: 100%; height: 100%;
+	position: absolute; top: -40%; left: 0%;
+	-webkit-transition: 1s ease-out ;
+	transition: 1s ease-out;
+}
+
+.project-list.show-instal, 
+.project-list.show-video, 
+.project-list.show-vjing, 
+.project-list.show-design {
+	position: absolute;	top: 0%; left: 0%;
+}
+
+.project-list.show-instal > .project-list__item--instal, 
+.project-list.show-video > .project-list__item--video,
+.project-list.show-vjing > .project-list__item--vjing, 
+.project-list.show-design > .project-list__item--design {
+	opacity: 1;
+	display: block; width: 30%; height: 30%;
+	background-color: $secondary-color;
+}
+
+.project-list__item {
+	opacity: 0;
+	position: absolute;
+	display: block; width: 30%; height: 30%;
+	-webkit-transition: 1s ease-out ;
+	transition: 1s ease-out;	
+}
