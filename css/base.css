@@ -9,7 +9,6 @@
   display: block;
   width: 30%;
   height: 30%;
-  background-color: red;
   border: solid #fff 10px; }
 
 .filter-list__item.hide {
